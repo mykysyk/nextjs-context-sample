@@ -4,9 +4,12 @@ import { MyProvider } from '../context/MyProvider'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <MyProvider>
-      <Component {...pageProps} />
-    </MyProvider>
+    <>
+      <h1>TITLE</h1>
+      <MyProvider>
+        <Component {...pageProps} />
+      </MyProvider>
+    </>
   )
 }
 
