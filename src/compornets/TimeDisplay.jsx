@@ -1,7 +1,10 @@
-import { useCount } from "../context/CounterProvider";
+import { useMyContext } from "../context/CountProvider";
 
 export function TimeDisplay() {
-  const { time } = useCount();
+  const { time, count } = useMyContext();
 
-  return <div>最後に押された時間: {time}</div>;
+  return (
+  <div>最後に押された時間: {time} [{count}]</div>
+
+  )
 }

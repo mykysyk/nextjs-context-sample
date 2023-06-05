@@ -1,5 +1,5 @@
 
-import { CountProvider } from '../context/CounterProvider'
+import { CountProvider } from '../context/CountProvider'
 
 
 function MyApp({ Component, pageProps }) {

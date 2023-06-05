@@ -1,8 +1,8 @@
-import React, { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext } from 'react';
 
 const CountContext = createContext();
 
-export function CountProvider({ children }) {
+export const CountProvider = ({ children }) => {
   const [count, setCount] = useState(0);
   const [time, setTime] = useState(null);
 
@@ -11,13 +11,19 @@ export function CountProvider({ children }) {
     setTime(new Date().toLocaleTimeString());
   };
 
+  const contextValue = {
+    count,
+    time,
+    incrementCount
+  };
+
   return (
-    <CountContext.Provider value={{ count, time, incrementCount }}>
+    <CountContext.Provider value={contextValue}>
       {children}
     </CountContext.Provider>
   );
 }
 
-export function useCount() {
+export const useMyContext = () => {
   return useContext(CountContext);
 }

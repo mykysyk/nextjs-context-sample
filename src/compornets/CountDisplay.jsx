@@ -1,8 +1,8 @@
-import { useCount } from "../context/CounterProvider";
+import { useMyContext } from "../context/CountProvider";
 
 
 export function CountDisplay() {
-  const { count } = useCount();
+  const { count } = useMyContext();
 
   return <div>カウント: {count}</div>;
 }
