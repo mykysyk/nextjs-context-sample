@@ -2,7 +2,7 @@ import { createContext, useState, useContext } from 'react';
 
 const CountContext = createContext();
 
-export const CountProvider = ({ children }) => {
+export const MyProvider = ({ children }) => {
   const [count, setCount] = useState(0);
   const [time, setTime] = useState(null);
 

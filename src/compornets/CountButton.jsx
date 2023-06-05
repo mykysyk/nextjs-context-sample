@@ -1,4 +1,4 @@
-import { useMyContext } from "../context/CountProvider";
+import { useMyContext } from "../context/MyProvider";
 
 
 export function CountButton() {

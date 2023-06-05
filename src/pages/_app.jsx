@@ -1,12 +1,12 @@
 
-import { CountProvider } from '../context/CountProvider'
+import { MyProvider } from '../context/MyProvider'
 
 
 function MyApp({ Component, pageProps }) {
   return (
-    <CountProvider>
+    <MyProvider>
       <Component {...pageProps} />
-    </CountProvider>
+    </MyProvider>
   )
 }
 

@@ -1,13 +1,13 @@
 import { CountButton } from '../compornets/CountButton';
 import { CountDisplay } from '../compornets/CountDisplay';
 import { TimeDisplay } from '../compornets/TimeDisplay';
-import { CountProvider } from '../context/CountProvider';
+import { MyProvider } from '../context/MyProvider';
 export default function App() {
   return (
-    <CountProvider>
+    <>
       <CountButton />
       <CountDisplay />
       <TimeDisplay />
-    </CountProvider>
+    </>
   );
 }
