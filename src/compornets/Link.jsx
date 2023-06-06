@@ -3,6 +3,8 @@ import Link from "next/link";
 const links = [
   {title: "index", url: "/"},
   {title: "index2", url: "/index2/"},
+  {title: "timer", url: "/timer/"},
+  {title: "text", url: "/text/"},
 ]
 
 export const Links = () => {
